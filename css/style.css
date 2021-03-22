@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(218, 28%, 13%);
+    background-color: hsl(217, 28%, 15%);
+    font-family: 'Open Sans';
+    font-size: 14px;
 }
 .container{
     margin: 0 2%;
@@ -38,6 +40,8 @@ nav ul li a:hover{
 }
 section.initial{
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 section.initial img{
     width: 660px;
@@ -59,6 +63,7 @@ section.initial p{
     margin: 20px auto;
     font-weight: 400;
     line-height: 1.7em;
+    z-index: 999;
 }
 section.initial button{
     width: 270px;
@@ -68,4 +73,41 @@ section.initial button{
     color: white;
     font-size: 1.1em;
     cursor: pointer;
+    margin-bottom: 150px;
+    z-index: 999;
+}
+section.information{
+    background-color: hsl(218, 28%, 13%);
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+#curved-img{
+    position: absolute;
+    width: 100%;
+    top: -380px;
+    z-index: 1;
+}
+section.information div{
+    max-width: 400px;
+    padding: 30px;
+    margin: 10px 40px;
+    text-align: center;
+    color: white;
+}
+/* section.information div:nth-child(1){
+    background-color: lawngreen;
+    
+} */
+section.information h3{
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+section.information p{
+    font-weight: 300;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
 }
