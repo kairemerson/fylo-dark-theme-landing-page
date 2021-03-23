@@ -111,3 +111,77 @@ section.information p{
     font-size: 13px;
     color: rgba(255, 255, 255, 0.7);
 }
+section.information2{
+    background-color: hsl(218, 28%, 13%);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.information2 img{
+    max-width: 600px;
+    margin: 0 20px;
+}
+section.information2 div{
+    max-width: 500px;
+    color: white;
+    margin: 0 40px;
+}
+section.information2 h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+section.information2 p{
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+section.information2 a{
+    color: white;
+    text-decoration: none;
+}
+section.information2 a::after{
+    content: url('../images/icon-arrow.svg');
+    position: relative;
+    top: 4px;
+    left: 5px;   
+}
+#arrow{
+    margin: 0;
+}
+section.members{
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    justify-content: center;
+}
+.members-single{
+    max-width: 340px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    font-size: 14px;
+    margin: 160px 20px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 35px 25px 25px 25px;
+}
+.members-single > div{
+    display: flex;
+    align-items: center;
+}
+.members-single > p{
+    margin-bottom: 10px;
+    
+}
+.members-single div>img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.members-single div>p{
+    font-size: 10px;
+    font-weight: 600;
+}
+div>p.office{
+    font-size: 8px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
