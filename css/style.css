@@ -149,6 +149,7 @@ section.information2 a::after{
     margin: 0;
 }
 section.members{
+    position: relative;
     background-color: hsl(218, 28%, 13%);
     display: flex;
     justify-content: center;
@@ -158,7 +159,7 @@ section.members{
     color: rgba(255, 255, 255, 0.8);
     font-weight: 300;
     font-size: 14px;
-    margin: 160px 20px;
+    margin: 160px 20px 300px 20px;
     background-color: hsl(219, 30%, 18%);
     padding: 35px 25px 25px 25px;
 }
@@ -184,4 +185,50 @@ div>p.office{
     font-size: 8px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.7);
+}
+section.early-access{
+    position: absolute;
+    bottom: -90px;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    background-color: hsl(217, 28%, 15%);    ;
+    text-align: center;
+    padding: 20px 50px;
+    font-family: "Raleway";
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.3);
+}
+section.early-access h2{
+    font-size: 2.1em;
+    font-weight: 600;
+    margin: 15px;
+}
+section.early-access p{
+    font-size: .9em;
+    font-family: 'Open Sans';
+    color: rgba(255, 255, 255, 0.7);
+    margin: 22px 0;
+    padding: 0 60px;
+    line-height: 18px;
+}
+section.early-access input{
+    width: 440px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 10px 0;
+    margin-right: 20px;
+}
+section.early-access button{
+    padding: 10px 30px;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+footer{
+    background-color: hsl(216, 53%, 9%);
+    height: 300px;
 }
