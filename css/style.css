@@ -217,6 +217,7 @@ section.early-access input{
     border-radius: 25px;
     margin: 10px 0;
     margin-right: 20px;
+    outline: none;
 }
 section.early-access button{
     padding: 10px 30px;
@@ -230,5 +231,54 @@ section.early-access button{
 }
 footer{
     background-color: hsl(216, 53%, 9%);
-    height: 300px;
+    padding: 100px;
+    color: white;
+    display: flex;
+}
+#desc{
+    padding: 15px;
+    margin: 20px 0 50px 0;
+}
+#desc img{
+    display: block;
+    margin-bottom: 20px;
+    width: 160px;
+}
+#desc i{
+    float: left;
+    font-size: 1.2em;
+    margin-right: 30px;
+}
+#desc p{
+    float: left;
+    width: 300px;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+}
+#contact{
+    margin: 100px 50px 0 50px;
+}
+#contact p{
+    margin-bottom: 10px;
+    font-size: .9em;
+    color: rgba(255, 255, 255, 0.7);
+}
+#about{
+    margin: 100px 50px 0 50px;
+}
+#about p{
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+}
+#terms{
+    margin: 100px 50px 0 50px;
+}
+#terms p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+}
+#social{
+    
 }
