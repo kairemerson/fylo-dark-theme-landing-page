@@ -31,12 +31,13 @@ ul li{
     margin: 0 20px;
 }
 nav ul li a{
-    color: white;
+    color: rgba(255, 255, 255, .7);
     text-decoration: none;
 }
 nav ul li a:hover{
     font-weight: 600;
     text-decoration: underline;
+    color: white;
 }
 section.initial{
     text-align: center;
@@ -48,33 +49,37 @@ section.initial img{
     margin-top: 50px;
 }
 section.initial h1{
-    color: white;
+    color: rgba(255, 255, 255, .9);
     font-family: 'Raleway';
-    font-size: 40px;
+    font-size: 2.8em;
     width: 700px;
     margin: 20px auto;
     font-weight: 600;
 }
 section.initial p{
-    color: white;
+    color: rgba(255, 255, 255, .7);
     font-family: 'Open Sans';
     font-size: 20px;
     width: 620px;
     margin: 20px auto;
     font-weight: 400;
-    line-height: 1.7em;
+    line-height: 1.6em;
     z-index: 999;
 }
 section.initial button{
     width: 270px;
     padding: 15px 0;
     border-radius: 30px;
-    background-color: hsl(176, 68%, 64%);
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
     color: white;
     font-size: 1.1em;
     cursor: pointer;
     margin-bottom: 150px;
     z-index: 999;
+}
+section.initial button:hover{
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+    font-weight: 600;
 }
 section.information{
     background-color: hsl(218, 28%, 13%);
@@ -97,10 +102,6 @@ section.information div{
     text-align: center;
     color: white;
 }
-/* section.information div:nth-child(1){
-    background-color: lawngreen;
-    
-} */
 section.information h3{
     margin: 20px 0 10px 0;
     font-weight: 600;
@@ -133,42 +134,56 @@ section.information2 h1{
 }
 section.information2 p{
     margin: 20px 0;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
 }
 section.information2 a{
-    color: white;
+    color: rgba(101, 226, 217, 0.7);
     text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(101, 226, 217, 0.7);
+}
+section.information2 a:hover{
+    color: white;
+    border-bottom: 1px solid white;
 }
 section.information2 a::after{
     content: url('../images/icon-arrow.svg');
     position: relative;
     top: 4px;
-    left: 5px;   
+    left: 5px; 
+    padding-bottom: 1px;
 }
-#arrow{
-    margin: 0;
-}
+
 section.members{
-    position: relative;
     background-color: hsl(218, 28%, 13%);
     display: flex;
     justify-content: center;
+    position: relative;
+}
+img#quotes{
+    display: block;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 128px;
+    left: 118px;
 }
 .members-single{
     max-width: 340px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
     margin: 160px 20px 300px 20px;
     background-color: hsl(219, 30%, 18%);
     padding: 35px 25px 25px 25px;
+    z-index: 9;
 }
 .members-single > div{
     display: flex;
     align-items: center;
 }
 .members-single > p{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     
 }
 .members-single div>img{
@@ -229,20 +244,26 @@ section.early-access button{
     color: white;
     background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
 }
+section.early-access button:hover{
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
 footer{
     background-color: hsl(216, 53%, 9%);
     padding: 100px;
+    padding-bottom: 40px;
     color: white;
     display: flex;
+    flex-wrap: wrap;
 }
+
 #desc{
     padding: 15px;
     margin: 20px 0 50px 0;
 }
 #desc img{
     display: block;
-    margin-bottom: 20px;
-    width: 160px;
+    margin-bottom: 50px;
+    width: 100px;
 }
 #desc i{
     float: left;
@@ -256,7 +277,12 @@ footer{
     color: rgba(255, 255, 255, 0.7);
 }
 #contact{
-    margin: 100px 50px 0 50px;
+    margin: 120px 60px 0 60px;
+}
+#contact i{
+    color: white;
+    font-size: 1.4em;
+    margin-right: 20px;
 }
 #contact p{
     margin-bottom: 10px;
@@ -264,7 +290,7 @@ footer{
     color: rgba(255, 255, 255, 0.7);
 }
 #about{
-    margin: 100px 50px 0 50px;
+    margin: 120px 60px 0 60px;
 }
 #about p{
     margin-bottom: 10px;
@@ -272,13 +298,34 @@ footer{
     color: rgba(255, 255, 255, 0.7);
 }
 #terms{
-    margin: 100px 50px 0 50px;
+    margin: 120px 40px 0 20px;
 }
 #terms p {
     margin-bottom: 10px;
     font-size: 1em;
     color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+#terms p:hover{
+    font-weight: 400;
+    color: white;
 }
 #social{
-    
+    margin: 120px 0 0 80px;
+}
+#social i{
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#social i:hover{
+    color: rgba(101, 226, 217, 0.8);
+    border-color: rgba(101, 226, 217, 0.8);
+}
+#social i:nth-child(1){
+    width: 25px;
+    text-align: center;
 }
