@@ -28,7 +28,7 @@ header img{
 
 ul li{
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 26px;
 }
 nav ul li a{
     color: rgba(255, 255, 255, .7);
@@ -92,7 +92,7 @@ section.information{
 #curved-img{
     position: absolute;
     width: 100%;
-    top: -380px;
+    top: -370px;
     z-index: 1;
 }
 section.information div{
