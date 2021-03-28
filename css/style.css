@@ -12,7 +12,7 @@ body{
     font-size: 14px;
 }
 .container{
-    margin: 0 2%;
+    padding: 0 2%;
 }
 header{
     display: flex;
@@ -74,7 +74,7 @@ section.initial button{
     color: white;
     font-size: 1.1em;
     cursor: pointer;
-    margin-bottom: 150px;
+    margin-bottom: 172px;
     z-index: 999;
 }
 section.initial button:hover{
@@ -83,7 +83,7 @@ section.initial button:hover{
 }
 section.information{
     background-color: hsl(218, 28%, 13%);
-    padding: 30px;
+    padding: 0px 30px 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,8 +92,11 @@ section.information{
 #curved-img{
     position: absolute;
     width: 100%;
-    top: -370px;
+    top: -390px;
     z-index: 1;
+}
+div#back{
+    display: none;
 }
 section.information div{
     max-width: 400px;
@@ -101,6 +104,12 @@ section.information div{
     margin: 10px 40px;
     text-align: center;
     color: white;
+}
+section.information div:nth-child(3) p{
+    width: 317px;
+}
+section.information div:nth-child(6) p{
+    width: 320px;
 }
 section.information h3{
     margin: 20px 0 10px 0;
@@ -118,6 +127,7 @@ section.information2{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 section.information2 img{
     max-width: 600px;
@@ -159,6 +169,7 @@ section.members{
     display: flex;
     justify-content: center;
     position: relative;
+    flex-wrap: wrap;
 }
 img#quotes{
     display: block;
@@ -226,17 +237,27 @@ section.early-access p{
     padding: 0 60px;
     line-height: 18px;
 }
+section.early-access p:last-child{
+    color:rgb(255, 66, 66);
+    text-align: left;
+    font-size: .8em;
+    margin: 0 10px;
+    position: relative;
+    top: -16px;
+}
 section.early-access input{
     width: 440px;
-    height: 40px;
+    height: 50px;
     border-radius: 25px;
-    margin: 10px 0;
+    margin: 6px 0;
+    padding-left: 30px;
     margin-right: 20px;
     outline: none;
 }
 section.early-access button{
     padding: 10px 30px;
-    height: 40px;
+    margin-bottom: 15px;
+    height: 50px;
     border-radius: 25px;
     outline: none;
     border: none;
@@ -254,6 +275,7 @@ footer{
     color: white;
     display: flex;
     flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 #desc{
@@ -274,7 +296,6 @@ footer{
     float: left;
     width: 300px;
     font-size: 1em;
-    color: rgba(255, 255, 255, 0.7);
 }
 #contact{
     margin: 120px 60px 0 60px;
@@ -287,7 +308,6 @@ footer{
 #contact p{
     margin-bottom: 10px;
     font-size: .9em;
-    color: rgba(255, 255, 255, 0.7);
 }
 #about{
     margin: 120px 60px 0 60px;
@@ -295,7 +315,6 @@ footer{
 #about p{
     margin-bottom: 10px;
     font-size: 1em;
-    color: rgba(255, 255, 255, 0.7);
 }
 #terms{
     margin: 120px 40px 0 20px;
@@ -303,7 +322,6 @@ footer{
 #terms p {
     margin-bottom: 10px;
     font-size: 1em;
-    color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
 #terms p:hover{
@@ -328,4 +346,183 @@ footer{
 #social i:nth-child(1){
     width: 25px;
     text-align: center;
+}
+@media screen and (max-width: 760px){
+    .container{
+        width: 100%;
+    }
+    header{
+        padding: 10px;
+        margin-top: 20px;
+    }
+    header img{
+        width: 90px;
+    }
+    ul li{
+        margin: 0 10px;
+        font-size: .9;
+    }
+    section.initial img{
+        width: 90%;
+    }
+    section.initial h1{
+        width: 95%;
+        font-size: 1.8em;
+        line-height: 1.4em;
+    }
+    section.initial p{
+        width: 90%;
+        font-size: 1.1em;
+        color: rgba(255, 255, 255, .8);
+        margin: 30px auto;
+    }
+    section.initial button{
+        padding: 16px;
+        margin-bottom: 50px;
+    }
+    section.information{
+        width: 100%;
+    }
+    #curved-img{
+        top: -425px;
+    }
+    section.information div{
+        width: 100%;
+        margin: 0;
+        padding: 50px 0px;
+
+    }
+    section.information div img{
+        width: 70px;
+    }
+    section.information h3{
+        font-size: 1.3em;
+    }
+    section.information p{
+        font-size: 1em;
+        color: rgba(255, 255, 255, .9);
+        padding: 2px 0;
+        line-height: 1.5em;
+    }
+    #back{
+        width: 100%;
+        height: 284px;
+        background-color: hsl(218, 28%, 13%);
+        position: absolute;
+        top: -284px;
+    }
+    section.information2{
+        padding: 40px 30px;
+    }
+    section.information2 img{
+        min-width: 95%;
+    }
+    section.information2 div{
+        margin: 0;
+    }
+    section.information2 h1{
+        font-size: 1.2em;
+        margin-top: 40px;
+    }
+    section.information2 a{
+        font-size: .9em;
+    }
+    section.members{
+        padding: 100px 40px 350px 40px;
+    }
+    .members-single{
+        margin: 14px 0;
+        position: relative;
+        font-size: .9em;
+    }
+    img#quotes{
+        width: 30px;
+        height: 25px;
+        top: 90px;
+        left: 48px;
+    }
+    section.early-access{
+        width: 90%;
+        padding: 30px;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(46%);
+        border-radius: 10px;
+    }
+    section.early-access input{
+        width: 100%;
+    }
+    section.early-access h2{
+        font-size: 1.5em;
+    }
+    section.early-access p{
+        color: rgba(255, 255, 255, .8);
+        font-size: 1em; 
+        padding: 0;   
+        line-height: 1.6em;    
+    }
+    section.early-access button{
+        width: 100%;
+        margin-top: 10px;
+    }
+    footer{
+        padding: 0;
+        margin-top: 0px;
+        font-size: 1.2em;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    footer div{
+        width: 100%;
+    }
+    #desc{
+        margin-top: 240px;
+        margin-bottom: 0;
+        padding: 25px 15px 25px 35px;
+    }
+    #desc img{
+        width: 160px;
+        margin-left: 20px;
+    }
+    #desc i{
+        font-size: 1.5em;
+        margin-right: 26px;
+        color: white;
+    }
+    #desc p{
+        font-size: .9em;
+        width: 276px;
+        line-height: 1.7em;
+    }
+    #contact{
+        padding: 25px 15px 25px 35px;
+        margin: 0;
+    }
+    #about{
+        margin: 0;
+        margin-top: 30px;
+        padding: 25px 15px 25px 35px;
+    }
+    #about p{
+        padding: 6px 0;
+    }
+    #terms{
+        margin: 0;
+        padding: 18px 15px 25px 35px;
+    }
+    #terms p{
+        padding: 6px 0;
+    }
+    #social{
+        margin: 0;
+        text-align: center;
+        margin: 50px 0;
+    }
+    #social i{
+        color: white;
+        font-size: 1.1em;
+        padding: 10px;
+    }
+    #social i:nth-child(1){
+        width: 42px;
+    }
 }
