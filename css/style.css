@@ -404,7 +404,8 @@ footer{
         padding: 2px 0;
         line-height: 1.5em;
     }
-    #back{
+    div#back{
+        display: block;
         width: 100%;
         height: 284px;
         background-color: hsl(218, 28%, 13%);
